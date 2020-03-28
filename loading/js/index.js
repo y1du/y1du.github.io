@@ -25,7 +25,7 @@ var timer = setInterval(function(){
 },30);
 
 var conneted=false;
-var wss = new WebSocket('ws://192.168.0.175:8080');
+var wss = new WebSocket('ws://192.168.0.103:8080');
 
 var resObj;
 
@@ -39,10 +39,10 @@ wss.onclose=function(){
 	console.log('已关闭')
 }
 wss.onmessage=function(msg){
-	console.log('收到数据'+msg.data);
+	console.log('收到数据'+msg.data+Date.now());
 	resObj=eval('('+msg.data+')');
 	//resObj=Json.serializeToStream(msg.data);
-	console.log(resObj);
+	//console.log(resObj);
 }
 
 var freshTimer = setInterval(function(){
