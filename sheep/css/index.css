@@ -1,0 +1,22 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.stage{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: #4e98eb;
+	
+}
+.sheep{
+	position: absolute;
+	width: 164px;
+	height: 122px;
+	background: url(../img/sheep.png) 0 0 no-repeat;
+	right: 0;
+	bottom: 0;
+	cursor: grabbing;
+}
